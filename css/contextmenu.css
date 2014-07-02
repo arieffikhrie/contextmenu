@@ -1,0 +1,44 @@
+.contextmenu, .contextmenu li ul {
+    font-size: 13px;
+
+    position: absolute;
+    z-index: 99999;
+
+    display: none;
+
+    width: 150px;
+    margin: 0;
+    padding: 6px 0;
+
+    cursor: default;
+
+    border: 1px solid #999;
+    background: #fff;
+    box-shadow: 3px 3px 8px #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+.contextmenu li {
+    position: relative;
+
+    padding: 5px 8px;
+
+    list-style: none;
+
+    cursor: pointer;
+}
+.contextmenu li.separator {
+    padding: 0;
+    margin: 5px 0;
+    border-top: 1px solid #ccc;
+    cursor: default;
+}
+.contextmenu li:hover {
+    background: #eee;
+}
+.contextmenu li:hover > ul {
+    display: block;
+}
+.contextmenu li ul {
+    top: 0;
+    left: 100%;
+}
